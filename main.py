@@ -23,6 +23,9 @@ chromadb.api.client.Client.clear_system_cache()
 st.title("Chat PDF")
 st.write("---")
 button(username="sang416", floating=True, width=221)
+st.html(
+        "<iframe src="https://ads-partners.coupang.com/widgets.html?id=816332&template=carousel&trackingCode=AF7997393&subId=&width=680&height=140&tsource=" width="680" height="140" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics> </iframe>"
+)
 
 # Streamlit File Uploader
 uploaded_file = st.file_uploader("Choose a file",type=['pdf'])
