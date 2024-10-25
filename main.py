@@ -13,6 +13,8 @@ import tempfile
 import os
 import chromadb.api.client
 from streamlit_extras.buy_me_a_coffee import button
+import streamlit.components.v1 as components
+
 
 chromadb.api.client.Client.clear_system_cache()
 
@@ -22,10 +24,8 @@ chromadb.api.client.Client.clear_system_cache()
 # Streamlit Title
 st.title("Chat PDF")
 st.write("---")
+components.iframe("https://ads-partners.coupang.com/widgets.html?id=816332&template=carousel&trackingCode=AF7997393", width=680, height=140)
 button(username="sang416", floating=True, width=221)
-st.html(
-        "<iframe src="https://ads-partners.coupang.com/widgets.html?id=816332&template=carousel&trackingCode=AF7997393&subId=&width=680&height=140&tsource=" width="680" height="140" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics> </iframe>"
-)
 
 # Streamlit File Uploader
 uploaded_file = st.file_uploader("Choose a file",type=['pdf'])
