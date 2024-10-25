@@ -23,7 +23,7 @@ st.title("Chat PDF")
 st.write("---")
 
 # Streamlit File Uploader
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Choose a file",type=['pdf'])
 st.write("---")
 
 def pdf_to_document(uploaded_file) :
