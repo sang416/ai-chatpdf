@@ -12,6 +12,7 @@ import streamlit as st
 import tempfile
 import os
 import chromadb.api.client
+from streamlit_extras.buy_me_a_coffee import button
 
 chromadb.api.client.Client.clear_system_cache()
 
@@ -21,6 +22,7 @@ chromadb.api.client.Client.clear_system_cache()
 # Streamlit Title
 st.title("Chat PDF")
 st.write("---")
+button(username="sang416", floating=True, width=221)
 
 # Streamlit File Uploader
 uploaded_file = st.file_uploader("Choose a file",type=['pdf'])
